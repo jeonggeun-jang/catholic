@@ -1,5 +1,5 @@
-*{position: fixed; margin: 0px; padding: 0px;border: none; outline: none; list-style: none; left: 0; top: 0;}
-main{z-index: 950; position: fixed;}
+*{margin: 0px;padding: 0px;border: none; outline: none; list-style: none;}
+main{z-index: 950;}
 b{color: #034C8C;}
 strong{color: #000;}
 .hidden{display: none;}
