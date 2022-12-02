@@ -1,0 +1,46 @@
+@import url("reset.css");
+
+/* main */
+main{background: #F2F2F2; width: 100%; height:calc(100vh - 55px); overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;}
+main::-webkit-scrollbar{display: none;}
+/*main::-webkit-scrollbar-thumb {height: 245px; background: #B7BBC7; border-radius: 5px;}
+main::-webkit-scrollbar-track{background-color: rgba(0,0,0,0);}*/
+main p.date-info{display: flex; flex-basis: 100%; align-items: center; margin: 20px 0 15px 0; font-size: 13px; color: #797979;}
+main p.date-info::before,
+main p.date-info::after {content: ""; flex-grow: 1; background: #D8D8D8; height: 1px; font-size: 0; line-height: 0; margin: 0 15px;}
+
+/* Client Message */
+#client-wrapper {display: grid; justify-items:end; margin:0 15px 15px 0;}
+#client-wrapper p.client-date{font-size: 13px; color: #3F4148; margin-bottom: 6px; right:5px;}
+#client-wrapper section.client-message {max-width: 90%; background: #791880; border-radius:15px 15px 0 15px;}
+#client-wrapper section.client-message pre {color:#fff; padding:15px; white-space: pre-wrap; font-size: 13px; word-break: break-all;}
+
+/* Agent Wrapper */
+#agent-wrapper {margin-bottom: 15px;}
+#agent-wrapper img.agent-profile{background-size: 100px; margin:0 5px -25px 15px; width: 35px; height: 35px; background: #AB395D; border-radius: 50%; cursor: pointer;}
+
+/* Agent Total Frame */
+#agent-frame {display: inline-table; max-width: 70%;}
+#agent-frame span.agent-name{font-weight: bold; color: #AB395D; margin-bottom: 5px; display: inline-block;}
+#agent-frame p.current-date{display:inline-block; margin-left: 5px; font-size: 13px; color: #797979;}
+
+/* Agent Message Form*/
+#message-area {border-radius: 0 15px 15px 15px; background: #FFFFFF;}
+#message-area img.agent-img{width: 100%; max-width:150px; height:auto; padding:15px; margin: 0 auto; display: block;}
+#message-area pre.agent-message{color:#000; padding:15px; white-space: pre-wrap; font-size: 13px; word-break: break-all}
+
+/* Agent Message - Card Form */
+#message-area .agent-button-wrapper {padding: 0 15px 15px 15px; flex-direction: column; justify-content: space-between;}
+#message-area .agent-button-wrapper button {background-color: #FFF; border: 1px solid #DBDBDB; border-radius: 10px; cursor:pointer; min-height: 40px; display:block; width:100%; margin: 0 0 5px 0;}
+#message-area .agent-button-wrapper button span {color: #C83A6F; display:flex; justify-content: center; font-size: 13px;  align-items: center;}
+#message-area .agent-button-wrapper button span i {font-size: 13px;}
+#selectBox {color: #C83A6F; width:100%; height: 40px; border: 1px solid #DBDBDB; border-radius: 10px; font-size: 13px; padding: 10px;}
+
+/* Input Form*/
+#input-form{display:flex; align-items: center; justify-content: center; position: fixed; bottom: 0; height: 55px; width: 100%; background: #FFF;}
+#input-box{display:flex; align-items: center; justify-content: space-between; width:100%; height:42px; margin: 0 6px; border: #EBEBEB solid 1px; border-radius:25px; background: #fff;}
+#input-box input.input-text {width:100%; margin-left: 14px; margin-right: 5px; background: #fff; font-size: 15px;}
+#input-box input.input-text::placeholder{color: #CCC;}
+#input-box button.send-icon {cursor:pointer; width: 34px; height: 34px; border-radius:50%; background: #AB395D url('../img/send.svg') no-repeat center; margin-right: 4px;}
+
+.hidden{display: none;}
